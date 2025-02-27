@@ -1,0 +1,175 @@
+body 
+{
+font-size: 16px;
+background-color: #898989;
+}
+
+
+a {color: inherit;}
+
+a:hover{color:pink}
+
+
+.container 
+{
+    outline: 1px solid black;
+    max-width: 1200px;
+    margin: auto;
+}
+.navbar {
+    position: absolute;
+    width: 99.2%;
+    background-color: #141313;
+    
+  }
+  .navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar .navbar_name {
+    color: #C4C4C4;
+    font-size: 2rem;
+  }
+  .navbar .page_info {
+    color: #898989;
+    margin-bottom: 3;
+  }
+  .page_info li {display: inline-block;}
+  
+  .header {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .header div
+  {
+    background-color: rgb(89, 103, 105);
+  }
+
+  .img_main_first
+  {
+    width:  150px;
+    height:  100px;
+    float: left;
+    margin: 2px;
+  }
+
+  .img_main_second
+  {
+    width:  150px;
+    height:  100px;
+    float: right;
+    margin: 3px;
+  }
+
+  .img_main_tree
+  {
+    width:  150px;
+    height:  100px;
+    float: left;
+    clear: both;
+  }
+
+  .img_box img
+  {
+    border-radius: 5px;
+    width: 350px;
+    height: 280px;
+
+  }
+
+  .img1
+  {
+    position: absolute;
+    top:  10px;
+    left: 40px;
+    z-index: 0;
+  }
+
+  .img1:hover
+  {
+    z-index: 5;
+  }
+  .img2:hover
+  {
+    z-index: 5;
+  }
+  .img3:hover
+  {
+    z-index: 5;
+  }
+  .img2
+  {
+    position: absolute;
+    top:  30px;
+    left: 80px;
+    z-index: 1;
+}
+.img3
+{
+    position: absolute;
+    top:  60px;
+    left: 120px;
+    z-index: 2; 
+}
+.header .container {margin-top: 100px;}
+
+.header .img_box
+{
+   height: 360px;
+   width: 500px;
+   margin-left: 0;
+}
+
+legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+fieldset{position: relative; margin: 0 100px;background-color: rgb(89, 103, 105);}
+
+
+
+
+form div
+{
+    position: absolute;
+    left: 15%;
+    top: 10%;
+}
+
+textarea
+{
+    padding-top: 15px;
+    padding-left: 15px;
+    height: 150px;
+    width: 450px;
+}
+
+footer
+{
+    position: relative;
+    display: flex;
+}
+
+footer img
+{
+margin: 3px;
+width: 50px;
+height: 50px;
+}
+
+.Special_button
+{
+    position: fixed;
+    top: 0px;
+    left: 93.5%;
+    top: 93%; 
+    border-radius: 5px;
+    z-index: 5;
+}

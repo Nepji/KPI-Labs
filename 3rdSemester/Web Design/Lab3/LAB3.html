@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>WhatIsLoveII</title>
+        <link rel="stylesheet" href="LAB3_style.css">
+
+        <script>
+            var Clicked = false;
+            function ShowFunction()
+            {
+                var root = document.getElementById('navigation').classList
+                if(root.contains('navbar_scrolled'))
+                    {
+                        root.remove('navbar_scrolled')
+                        root.add("navbar_scrolledout")
+                        Clicked=false
+                    }
+                else
+                    {
+                        Clicked=true
+                        root.add('navbar_scrolled')
+                        root.remove("navbar_scrolledout")
+                    }
+            }
+
+            window.addEventListener('scroll',(e) =>
+            {
+            var root = document.getElementById('navigation').classList
+
+            if(scrollY < 282 && Clicked!=true)
+            {
+                root.remove("navbar_scrolledout")
+                root.add("navbar_scrolled")
+            }
+            else if (scrollY>10 && Clicked!=true)
+            {
+                root.add("navbar_scrolledout")
+                root.remove("navbar_scrolled")
+            }
+
+            console.log(scrollY)
+            })
+
+            
+        </script>
+        
+    </head>
+
+
+    <body>
+        <button onclick="ShowFunction()" class = "nav_button "></button>
+
+        <nav class = "navigation" id= "navigation">
+            <div class = "container">
+
+                <h5 class = "Nav_Name"><a href="#head">WhatIsLoveIII</a></h5>
+
+                <div class = "page_info container">
+                    <div><a href="#cards">Набір "Щастя"</a></div>
+                    
+                    <div><a href="#info">Пояснювальна записка</a></div>
+                    
+                    <div><a href="Download">Завантажити</a></div>
+                    
+                    <div><a href="FiBack">Зворотній Зв'язок</a></div>               
+                </div>
+            </div>
+        </nav>
+
+        <header id="head" class = "header">
+            <div class="container">
+                <div class="header_title">
+                    <h1 style="margin: 0">Набір Щастя</h1>
+                    <h2 style="margin: 0"> Онлайн</h2>
+                </div>
+                
+            </div>
+        </header>
+
+        <hr>
+
+        <div id="cards" class = "container">
+                <div id="info"  class = "list">
+                    <div class = "Fischl"><img class = "img" src="src/Card_Fischl.jpg" alt=""><div>Тута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута а Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа Текста</div>
+                </div>
+                    <div class="Weapon"><img class = "img" src="src/Card_Weapon.png" alt=""><div>ТутнстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа Текста</div>
+                </div>
+                    <div class = "Items"><img class = "img" src="src/Card_Item.png" alt=""><div>ТутакстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет МнТека Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа ТекстаТута Будет Многа Текста</div>
+                </div>
+                </div>
+        </div>
+
+        <hr>
+
+        <div id="Download">
+            <form action="" >
+                <fieldset class = "form">
+                    <legend class = "legend">Дівчинка з Пельмешками</legend>
+                    <div  class="container list">
+                        <h5>Увага!!!! У ВАС З'ЯВИЛАСЬ НЕРЕАЛЬНА МОЖЛИВІСТЬ ЗАВАНТАЖИТИ ФОТОГРАФІЮ ДІВЧИНКИ З ПЕЛЬМЕШКАМИ.</h5>
+                        <button class = "button" style="justify-content: right;"><a href="src/PEGG/CuteGirlWithPelmeni.png" download="CuteGirlWithPelmeni.png" >Download</a></button>
+                    </div>
+                </fieldset>
+            </form>
+            </div>
+        </div>
+    
+            <hr>
+    
+            <div class="container_grid">
+                    <div class = "CU_info" grid.ColumnSpan = "2">
+                        <div>DON`t Contact US</div>
+                        <div>We HATE talking</div>
+                    </div>
+                    <div class="grid_element1">
+                        Фишль может призвать к себе на помощь ворона ночи Оза, который будет безжалостно карать врагов молнией. Взрыв стихии Фишль взывает ворон расправить крылья и встать на её защиту. Все, кто посмеет угрожать принцессе ночи и коснётся крыльев ворона, ощутят громовую кару небес.
+                    </div>
+                    
+                    <div lass="grid_element2">
+                        Вскипятите в кастрюле воду на сильном огне и добавьте приправы и масло. Аккуратно выложите пельмени в кипяток и сразу перемешайте, чтобы они не слиплись.Доведите воду до кипения ещё раз. Пельмени всплывут на поверхность. Убавьте огонь до среднего и варите их ещё 5–7 минут, периодически помешивая.
+                    </div>
+                    </div>
+            </div>
+
+            <hr>
+
+        
+
+        <footer id="FiBack" style="padding-bottom: 30px;"> <form action="" class="container">
+            <div  class="list">
+                <div class ="in_form">
+                    <input type="text" name="text" placeholder="Ім'я" required>
+                    <p></p>
+                    <input type="email" name="login" placeholder="YourMail@gmail.com" required>
+                    <p></p>
+                    <input type="text" name="text" placeholder="Тема повідомлення">
+                    <p></p>
+                    <Button type = "submit" class="button"><a href="">Відправити</a></Button>
+                </div>
+                <div class="field">
+                    <textarea placeholder="Повідомлення" required ></textarea>
+                </div>
+            </div>
+            
+        </form></footer>
+
+
+    </body>
+</html>

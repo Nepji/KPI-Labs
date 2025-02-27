@@ -1,0 +1,138 @@
+body {
+  font-size: 16px;
+  background-color: #898989;
+}
+
+a {color: inherit;}
+
+a:hover{color:pink}
+
+table
+{
+  font-size: 15px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  border-collapse: collapse;
+  border: 2px solid black;
+}
+
+tr,td
+{border: 1px solid white;}
+
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-image:url(src/pic.jpg);
+  image-rendering: auto;
+}
+
+
+.header_title {
+  color: white;
+  text-shadow: black 2px 3px 4px;
+  font-size: 7rem;
+  font-family: Impact
+}
+
+.navbar {
+  position: absolute;
+  width: 99.2%;
+  background-color: #141313;
+  
+}
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .navbar_name {
+  color: #C4C4C4;
+  font-size: 2rem;
+}
+.navbar .page_info {
+  color: #898989;
+  margin-bottom: 3;
+}
+.page_info li {display: inline-block;}
+
+.navbar_scrolled {
+  position: fixed;
+  animation-name: fadeInUp;
+  animation-duration: 1.5s;
+  opacity: .7;
+}
+
+.navbar_scrolledout {
+  animation-name: fadeInDawn;
+  animation-duration: 1.5s;
+  opacity: 0;
+}
+
+.navbar_show{
+  animation-name: fadeShow;
+  animation-duration: 0.5s;
+  opacity: 1;
+}
+
+
+.navbar_scrolled:hover{opacity: .8}
+
+.container_contacts
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+
+
+
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    top: -50px;
+  }
+  to {
+    opacity: .7;
+    top: 0px;
+  }
+}
+@keyframes fadeInDawn {
+  from {
+    position: fixed;
+    opacity: .7;
+    top: 0px;
+    
+  }
+  to {
+    position: fixed;
+    opacity: 0;
+    top: -50px;
+  }
+}
+
+@keyframes fadeShow
+{
+  from {
+    opacity: 0;
+    
+  }
+  to {
+    opacity: 1;
+  }
+}
+ 
+

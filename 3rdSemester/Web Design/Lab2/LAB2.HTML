@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>WhatIsLoveII</title>
+        <link rel="stylesheet" href="LAB2_style.css">
+    </head>
+
+    <body>
+        <nav class="navbar" id = "navigation">
+            <div class="container" >
+                <h2 class = "navbar_name"><a href="#head">WhatIsLoveII</a></h2>
+            
+                <ul class = "page_info">
+                  <li><a href="#Registration">Форма реєстрації</a></li>
+                  <li><a href="#LogIN">Форма входу</a></li>
+                  <li><a href="#FitBAck">Форма зворотнього зв'язку</a></li>
+              </div>
+        </nav>
+        
+
+        <header class = "header" id = "head">
+            <div class="container" style="margin-right: 1px; height: 360px">
+                    <img src="src/pic_header_main.png" class = "img_main_first">
+                    <p>
+                        What is love? Oh baby, don't hurt me Don't hurt me No more Baby, don't hurt me, don't hurt me No more What is love? Yeah No, I don't know why you're not fair  I give you my love, but you don't care  So what is right and what is wrong? Gimme a sign What is love? Oh baby, don't hurt me Don't hurt me No more What is love? Oh baby, don't hurt me Don't hurt me No more Whoa, whoa, oh Whoa, whoa, oh Oh,
+                        <img src="src/pic_header_main.png" class = "img_main_second"> I don't know, what can I do? What else can I say? It's up to you I know we'ren  one, just me and you I can't go on What is love? Oh baby, don't hurt me Don't hurt me No more What is love? Oh baby, don't hurt me Don't hurt me No more Whoa, whoa, oh Whoa, whoa, oh What is love? What is love? What is love? Oh baby, don't hurt me Don't hurt me No more Don't hurt me Don't hurt me I want no other,
+                        <img src="src/pic_header_main.png" class = "img_main_tree"> no other lover This is our life, our time If we  are together, I need you forever Is it love? What is love? Oh baby, don't hurt me Don't hurt me No more What is love? Oh baby, don't hurt me Don't hurt me No more Yeah, yeah Whoa, whoa, oh Whoa, whoa, oh What is love? Oh baby, don't hurt me Don't hurt me No more What is love? Oh baby, don't hurt me Don't hurt me No more (whoa, whoa) Oh baby, don't hurt me Don't hurt me No more (whoa, whoa) Oh baby, don't hurt me Don't hurt me No more What is love?
+                    </p>
+                    <audio controls><source src="src/WhatIsLove.mp3" type="audio/mpeg"></source></audio>
+                    
+            </div>
+            
+            <div class="container" style = "position: relative; margin-left: 0px;">
+                <div class = "img_box">
+                    <div class="img1"><img src="src/pic_header_main.png"></div>
+                    <div class="img2"><img src="src/pic_header_main.png"></div>
+                    <div class="img3"><img src="src/pic_header_main.png"></div>
+                </div>
+  
+            </div>
+        </header>
+        
+
+        <form action="URL" id="Registration">
+            <fieldset style="height: 590px;"> 
+                <legend><strong>Форма реєстрації</strong></legend>
+                <div class = "Registration_Block1">
+                            <img src = "src/pic_header_main.png" width = "150" height = "150">
+                        <p>Ім'я</p>
+                            <input type="text" name="text" placeholder="Ім'я" pattern="[A-Za-z]{0,9}" required>
+                        <p style="margin-top: 5px;">Прізвище</p>
+                            <input type="text" name="text1 "placeholder="Прізвище" pattern="[A-Za-z]{0,9}" required>
+                        <p>Стать</p>
+                            <input type="radio" name="radio" > Чоловіча
+                            <input type="radio" name="radio" style="margin-left: 30px;"> Жіноча
+                        <p>Вік</p>
+                            <input type="number" name="range" placeholder="Вік" min="1" max="632" required>
+                        <p>Дата народження</p>
+                            <input type="date" name="range" class="styleDateOfBir" required>
+                        <p></p>
+                    </div>
+                <div style="left: 70%;">
+                    <p>Країна проживання</p>
+                    <select name= "select">
+                        <option selected="selected">Україна</option>
+                        <option>Польша</option>
+                        <option>США</option>
+                        <option>Молдова</option>
+                        <option>Оркія</option>
+                        <option>Британія</option>           
+                    </select>
+                    <p>Номер телефону</p>
+                        <input type="tel" name="phone" pattern = "\+38\(0[0-9]{2}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+38(0ХХ)ХХХ-ХХ-ХХ" maxlength="13" required>
+                    <p>Ім'я користувача Telegram</p>
+                        <input type="text" name="text" pattern="@[A-Za-z0-9]{1,15}" placeholder="Telegram">
+                    <p>Електронна пошта</p>
+                        <input type="email" name="login" pattern="[A-Za-z0-9]{1,15}@gmail.com" placeholder="YourMail@gmail.com" required>
+                    <p>Пароль <i>(довжина 24 символи)</i></p>
+                        <input type="password" name="password" pattern="[A-Za-z0-9]{0,10}" maxlength="24" placeholder="Пароль" required>
+                    <p></p>
+                        <input type="checkbox" name="checkbox" style="margin-top: 30px" size = "10" required> Чи погоджуєтесь Ви з умовами?
+                    <p style="margin-top: 50px;">
+                    <button type = "submit">Зарєструватися</button>
+      				<button type = "reset">Відміна</button>
+                    </p>
+                </div>
+            </fieldset>  
+        </form>
+
+        <form action="URL" id="LogIN" >
+            <fieldset style="height: 100px; ">
+                <legend><strong>Вхід до "Акаунту"</strong></legend>
+                <div>
+                        <b style = " font-size: 20px;"><a name = "login">Форма входу:</a><b></b>
+                        <input  type="txt" name="login" maxlength="25" placeholder="Логін" required>
+                        <input  style = "margin-top: 15px; "type="password" name="password" maxlength="15" placeholder="Пароль" required>   
+                        <button>Вхід</button>
+                </div>
+            </fieldset>
+        </form>
+
+        <form action="URL" id = "FitBAck">
+                <fieldset style = "height: 250px;">
+                    <legend>Зворотній зв'язок</legend>
+                    <div>
+                        <input type="text" name="text" placeholder="Ім'я">
+                        <p></p>
+                        <input type="email" name="login" placeholder="YourMail@gmail.com" required>
+                        <p></p>
+                        <input type="text" name="text" placeholder="Тема повідомлення">
+                        <p></p>
+                        <button type = "submit">Відправити</button></div>
+                    <div style = "left: 40%; ">
+                        <textarea class="field" placeholder="Повідомлення" required></textarea>
+                    </div>
+                </fieldset>
+        </form>
+    </body>
+
+    <a class ="Special_button" href="#head">Нагору^</a>
+
+    <hr>
+    <footer>   
+       Соц-Попрошайка:
+       <a href="https://www.instagram.com/?hl=ru" target="_blank"><img src="src/Instagram_icon.jpg" class="net"></a>
+       <a href = " https://uk-ua.facebook.com" target="_blank" ><img  src="src/Facebook_icon.jpg" class="net"></a>
+       <a href="https://web.telegram.org/?legacy=1#/login"><img src="src/Telegram_Icon.png" alt="net"></a>
+       <a href="https://www.youtube.com"><img src="src/YouTube_icon.png" alt="net"></a>
+    </footer>
+
+</html>

@@ -1,0 +1,342 @@
+
+body 
+{
+font-size: 16px;
+background-color: #aba5c3;
+margin: 0;
+font-family: system-ui;
+}
+
+a{
+    color: #e6e6e6;
+}
+a:hover
+{
+    color:#000000
+}
+
+.container 
+{
+    margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.container_grid
+{
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    
+    
+    grid-template-areas: "DCU DCU" 
+                        "text1 text2" ;
+}
+
+.CU_info
+{
+    grid-area: DCU;
+    text-align: center;
+}
+
+.grid_element1
+{
+    grid-area: text1;
+}
+
+.grid_element2
+{
+    grid-area: text2;
+}
+
+
+
+nav
+{
+    text-align: center;
+    padding-top: 20px;
+    position: absolute;
+    width: 17%;
+    background-color: #473980;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.nav_button
+{
+    position: fixed;
+    top: 1%;
+    z-index: 10;
+    background-image: url(src/button.png);
+    background-color: #473980;
+    background-size: cover;
+    height: 5vh;
+    width: 5vh;
+    border-radius: 10px;
+}
+
+.navigation .container
+{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation .container .page_info
+{
+    color: #b9b9b9;
+    margin-bottom: 3;
+}
+
+.navigation .container .page_info li
+{
+   list-style: none;
+}
+
+.Nav_Name
+{
+    color: #C4C4C4;
+    font-size: 2rem;
+}
+
+.header
+{
+    height: 100vh;
+    display: flex;
+    background-image: url(src/header.gif);
+    background-size: cover;
+}
+.header .container
+{
+ margin-left: 13%;
+ border: none;
+}
+
+.header .header_title
+{
+    text-align: center;
+    font-size: 3rem;
+    font-family: Impact;
+}
+
+.list
+{
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+
+.list .img
+{
+    max-width: 256px;
+    max-height: 350px;
+    border-radius: 10px;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+
+.form .legend
+{
+    border: 10px;
+    border-radius: 5px;
+    border: thick double #2e2552;
+    background-color: #aba5c3;
+}
+
+.form
+{
+    border-color: #2e2552;
+    background-color: #473980;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.form .container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form .container h2
+{
+    flex-grow: 0.7;
+}
+
+.button
+{
+    border: thick double #2e2552;
+    color: wheat;
+    background-color: #948eac;
+    border-radius: 5px;
+    border: 1px;
+    flex-grow: 0.11;
+    text-align: center;
+}
+
+.field
+{
+    flex-grow: 0.5;
+}
+.field textarea
+{
+    min-width: 100%;
+    min-height: 90%;
+}
+
+.in_form
+{
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.list_form p{margin-left:15px;margin-right: 15px;}
+
+.navbar_scrolled {
+    position: fixed;
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
+    opacity: .7;
+  }
+  
+  .navbar_scrolledout {
+    animation-name: fadeInDawn;
+    animation-duration: 1.5s;
+    opacity: 0;
+  }
+  
+  .navbar_show{
+    animation-name: fadeShow;
+    animation-duration: 0.5s;
+    opacity: 1;
+  }
+
+
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      top: -50px;
+    }
+    to {
+      opacity: .7;
+      top: 0px;
+    }
+  }
+  @keyframes fadeInDawn {
+    from {
+      position: fixed;
+      opacity: .7;
+      top:  0px;
+      
+    }
+    to {
+      position: fixed;
+      opacity: 0;
+      top: -50px;
+    }
+  }
+
+  @media screen and (min-width:730px) and (max-width:1000px) {
+    body
+    {font-size: 18px;}
+    div.one-news
+    {
+        width: 60%;
+    }
+    .list div
+    {
+        padding-bottom: 15px;
+    }
+
+    .navigation
+    {
+        width: 50%;
+        font-size: 20px;
+    }
+
+    .navigation h5
+    {
+        font-size: 16px; 
+    }
+
+    .container_grid
+    {
+        grid-template-areas: "DCU" "text1" "text2" ;
+    }
+
+  }
+
+  @media screen and (max-width:480px)  {
+    body{
+        font-size: 25px;
+    }
+
+    .list
+    {
+        text-align: center;
+        flex-direction: column;
+    } 
+
+    .list div
+    {
+        padding-bottom: 15px;
+    }
+    .navigation
+    {
+        width: 50%;
+        font-size: 10px;
+    }
+
+    .navigation h5
+    {
+        font-size: 20px; 
+    }
+    .container_grid
+    {
+        grid-template-areas: "DCU" "text1" "text2" ;
+    }
+
+  }
+
+  @media screen and (min-width: 490px) and (max-width:720px)  {
+    body{
+        font-size: 22px;
+    }
+
+    .list
+    {
+        text-align: center;
+        flex-direction: column;
+    } 
+
+    .list div
+    {
+        padding-bottom: 10px;
+    }
+
+    .navigation
+    {
+        width: 40%;
+        font-size: 30px; 
+    }
+
+    .navigation h5
+    {
+        font-size: 10px; 
+    }
+    .container_grid
+    {
+        grid-template-areas: "DCU" "text1" "text2" ;
+    }
+
+  }
+
+
+  
+
+  

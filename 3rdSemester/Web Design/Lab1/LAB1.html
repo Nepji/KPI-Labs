@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WhatIsLove</title>
+    <link rel="shortcut icon" href="favicon.ico?v=2" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.addEventListener('scroll',(e) =>
+            {
+            var root = document.getElementById('navigation').classList
+
+            if(scrollY < 10)
+            {
+                root.remove("navbar_scrolledout")
+                root.remove("navbar_scrolled")
+                root.add("navbar_show")
+            }
+            else if(scrollY > 650)
+            {
+                root.add("navbar_scrolled")
+                root.remove("navbar_scrolledout")
+                root.remove("navbar_show")
+            } 
+            else
+            {
+                root.add("navbar_scrolledout")
+                root.remove("navbar_scrolled")
+                root.remove("navbar_scrolled")
+            }
+
+            console.log("sazdas")
+            })
+    </script>
+    
+</head>
+
+<body>
+    <nav class="navbar" id = "navigation">
+        <div class="container" >
+          <h2 class = "navbar_name"><a href="#head">Мазератті А.Б</a></h2>
+      
+          <ul class = "page_info">
+            <li><a href="#biography">Опис Актора</a></li>
+            <li><a href="#photo">Фото</a></li>
+            <li><a href="#films">Фільми з участю</a></li>
+            <li><a href="#contacts">Контакти актора</a></li>
+        </div>
+    </nav>
+      
+    <header id="head" class = "header">
+        <div class="container">
+        <h1 class = "header_title">Артуріо Баребухович Мазератті</h2>
+        </div>
+    </header>
+
+    <section align = "center" style = "font-size: 16px;">
+        <h1 id=biography align = "center"> <strong>Опис Актора</strong> </h1>
+        <p>
+           <strong> „Уже слово «христианство» есть недоразумение, — в сущности был только один христианин, и он умер на кресте.“</strong>
+        </p>
+        <p>Мистецтво це міст між смертним та вічним. Саме воно дарує нам це хибне відчуття безсмертя. З кожним переглядом таких кінофільмов: "Зелений слонік", "Джожо", "Збірник пісень Егора Летова" ви можливо цікавились хто надав нам змогу стати свідком неземного. </p>
+        <p>Артуріо - юнак родом з невеличкого містечка Борзна. Місце відоме тим що там відбулося багатьох зустрічей Пантелеймона Куліша й Тараса Шевченка. Ще тоді кам'яними цеглинами вибудовувався незламний образ Борзнянського краю. Навчався Артур Мазератті в гімназії. Гімназійни часи були теплими, але на душі відчувався холод. Кожен день як багато хто із нас Артуру Мазератті приходилось переживати вічність, що тривала 8 годин. Цей катарсис й став ескізом Зеленого слоніка. Творчий шлях після цього помчався зі швидкістю світу й дарував нам такі витвори.</p>
+        <p>Звідки Артур Мазератті Баребухович взяв своє наіменування? Все просто, від Бога</p>
+    </section>
+    
+    <section>
+        <h1 id=photo align = "center"> <strong>Фото</strong> </h1>
+        <table align="center" style="font-family: Impact;">
+            <tr>
+               <td>
+                  <img src="src/slot1.jpg" alt="Артуре" height="360" width="280">
+               </td>
+   
+               <td >
+                  <a target="_blank" href="https://ru.wikipedia.org/wiki/JoJo’s_Bizarre_Adventure"><img src="src/tempslot2.jpg" alt="Де ж ти" height="360" width="280"></a>
+               </td>
+   
+               <td>
+                  <img src="src/tempslot3.jpg" alt="ТР-15 за тобою сумує" usemap="#photomap" height="360" width="280">
+                  <map name="photomap">
+                     <area shape="rect" coords="180,200,100,100" target="_blank" href="https://www.youtube.com/watch?v=A5tGX0WrqYM">
+                  </map>
+               </td>
+            </tr>
+   
+            <tr>
+                
+                <td><em>Зелений слоник</em></td>
+                <td><em>JoJo Adventure </em></td>
+                <td>Збірник Пісень<em> Егора Летова</em></td>
+            </tr>
+         </table>
+    </section>
+
+    
+    
+    <section align = "center">
+        <h1 id=films > <strong>Фільми з участю</strong> </h1>
+        <table align = "center"  >
+            <thead style="border: 1px solid white;">
+                <tr>
+                    <th colspan="2">Назва фільму та Рік</th>
+                    <th colspan="3">Опис та оцінка Metacritic</th> 
+                </tr>
+                <tr>
+                    <th>Назва</th>
+                    <th>Рік</th>
+                    <th>Опис</th>
+                    <th>Оцінка користувачів</th>
+                    <th>Оцінка критиків</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jojo Rabbit</td>
+                    <td>2019</td>
+                    <td>Світогляд самотнього німецького хлопчика перевертається з ніг на голову, коли він виявляє, що його мати-одиначка ховає молоду єврейську дівчину на горищі.</td>
+                    <td>58</td>
+                    <th>7.8</th>
+                </tr>
+                <tr>
+                    <td>Cuphead Show</td>
+                    <td>2022</td>
+                    <td>Мультсеріал, заснований на відеогрі Cuphead, розповідає про пригоди Капхеда та його брата Магмена.</td>
+                    <td>69</td>
+                    <th>7.3</th>
+                </tr>
+                <tr>
+                    <td>BoJack Horseman</td>
+                    <td>2014</td>
+                    <td>Анімаційна комедія про боротьбу колишньої зірки ситкому (Вілл Арнетт), який живе в Лос-Анджелесі, виявляється напівконем-напівлюдиною.</td>
+                    <th>59</th>
+                    <td>8.6</td>
+                </tr>
+                <tr>
+                    <td>Mike Judge's Beavis and Butt-Head</td>
+                    <td>2022</td>
+                    <th>Серіал розповідає про однойменних Бівіса і Баттхеда пару підлітків-ледарів, що відрізняються апатією, розумовою відсталістю і низькопробним гумором.</th>
+                    <td>81</td>
+                    <td>6.0</td>
+                </tr>
+                <tr>
+                    <td>Зелений слоник</td>
+                    <td>1999</td>
+                    <td>Сюжет Дія фільму відбувається приблизно в 1986 році на гауптвахті, куди за провини потрапляють два молодші офіцери.</td>
+                    <th>95</th>
+                    <td>8.0</td>
+                </tr>
+                <tr>
+                    <td>JoJo's Bizarre Adventure</td>
+                    <td>1992-2003</td>
+                    <td>Британський аристократ XIX століття Джонатан Джостар - протистоїть Діо Брандо, який планує обманом позбавити героя спадщини. У гонитві за багатством і могутністю Діо звертається до вампіра і знаходить безсмертя за допомогою стародавнього артефакту</td>
+                    <th>91</th>
+                    <td>9.5</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    
+    <section class = "container" >
+        <h1 id=contacts align = "center"> <strong>Контакти актора</strong> </h1>
+        <ul class = "page_info" style="text-align: center;">
+            <li><strong> Мобільний телефон:</strong> <em>+380 96 271 36 55.</em></li>
+            <li><strong><a href="https://www.instagram.com/arturio.mazerati/?igshid=YmMyMTA2M2Y%3D">Instagram.</a></li>
+            <li><strong><a href="https://t.me/artyyyyyr">Telegram.</a></strong></li>
+            <li><strong>Пошта:</strong> <em><a href="mailto:yano4ka.pinlik@gmail.com">Stets.Artur@kpi.lll.ua</a></em></li>
+        </ul>
+    </section>
+
+
+
+    <section>
+        <hr color>
+        <footer id = "webinfo">
+            <ul class = "page_info" style="text-align: center;">
+                <li><strong> @NotCopyright Forever </strong></li>
+                <li><strong> Мобільний телефон:</strong> <em>+380663229705.</em></li>
+                <li><strong><a href="https://www.instagram.com/zelenskiy_official/">Instagram.</a></li>
+                <li><strong><a href="http://roz.kpi.ua">Telegram.</a></strong></li>
+                <li><strong>Пошта:</strong> <em><a href="mailto:Stets.Artur@kpi.lll.ua">yano4ka.pinlik@gmail.</a></em></li>
+            </ul>
+        </footer>
+    </section>
+</body>
+</html>
