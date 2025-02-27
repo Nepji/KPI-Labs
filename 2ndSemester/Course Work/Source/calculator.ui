@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Calculator</class>
+ <widget class="QMainWindow" name="Calculator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>621</width>
+    <height>198</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>621</width>
+    <height>198</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>621</width>
+    <height>198</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Calculator</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>img/logo.ico</normaloff>img/logo.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"> background: #202124</string>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>621</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="7" column="4">
+      <widget class="QPushButton" name="pushButton_point">
+       <property name="styleSheet">
+        <string notr="true">background: #5f6368;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>.</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Operations</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="6" column="5">
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="styleSheet">
+        <string notr="true">    background: #3c4043;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>3</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Values</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QPushButton" name="pushButton_factorial">
+       <property name="styleSheet">
+        <string notr="true">background: #5f6368;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>x!</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Operations</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QPushButton" name="pushButton_log">
+       <property name="styleSheet">
+        <string notr="true">background: #5f6368;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>log</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Operations</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QPushButton" name="pushButton_seven">
+       <property name="styleSheet">
+        <string notr="true">    background: #3c4043;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>7</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Values</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="styleSheet">
+        <string notr="true">    background: #3c4043;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>4</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Values</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="3" column="5">
+      <widget class="QPushButton" name="pushButton_per">
+       <property name="styleSheet">
+        <string notr="true">background: #5f6368;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>%</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Operations</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QRadioButton" name="radioButton_Deg">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: #5f6368;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>Deg</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Operations</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="4" column="5">
+      <widget class="QPushButton" name="pushButton_nine">
+       <property name="styleSheet">
+        <string notr="true">    background: #3c4043;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>9</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Values</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QPushButton" name="pushButton_In">
+       <property name="styleSheet">
+        <string notr="true">background: #5f6368;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>ln</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Operations</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <widget class="QPushButton" name="pushButton_pow">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: #5f6368;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>xᵞ</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Operations</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QPushButton" name="pushButton_EXP">
+       <property name="styleSheet">
+        <string notr="true">background: #5f6368;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>EXP</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Operations</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="3" column="6">
+      <widget class="QPushButton" name="pushButton_reset">
+       <property name="styleSheet">
+        <string notr="true">background: #5f6368;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>CE</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Operations</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="7" column="6">
+      <widget class="QPushButton" name="pushButton_plus">
+       <property name="styleSheet">
+        <string notr="true">background: #5f6368;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>+</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Operations</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QPushButton" name="pushButton_sin">
+       <property name="styleSheet">
+        <string notr="true">background: #5f6368;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>sin</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Operations</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="6" column="3">
+      <widget class="QPushButton" name="pushButton_1">
+       <property name="styleSheet">
+        <string notr="true">    background: #3c4043;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Values</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="4" column="4">
+      <widget class="QPushButton" name="pushButton_eight">
+       <property name="styleSheet">
+        <string notr="true">    background: #3c4043;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>8</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Values</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QPushButton" name="pushButton_pi">
+       <property name="styleSheet">
+        <string notr="true">background: #5f6368;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>pi</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Operations</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="QPushButton" name="pushButton_closebrace">
+       <property name="styleSheet">
+        <string notr="true">background: #5f6368;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>)</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Operations</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="7" column="3">
+      <widget class="QPushButton" name="pushButton_0">
+       <property name="styleSheet">
+        <string notr="true">    background: #3c4043;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Values</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QPushButton" name="pushButton_cos">
+       <property name="styleSheet">
+        <string notr="true">background: #5f6368;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>cos</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Operations</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="6" column="4">
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="styleSheet">
+        <string notr="true">    background: #3c4043;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>2</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Values</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="5" column="5">
+      <widget class="QPushButton" name="pushButton_six">
+       <property name="styleSheet">
+        <string notr="true">    background: #3c4043;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>6</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Values</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="7" column="5">
+      <widget class="QPushButton" name="pushButton_equ">
+       <property name="styleSheet">
+        <string notr="true">background: #5f6368;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>=</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Operations</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="6" column="6">
+      <widget class="QPushButton" name="pushButton_min">
+       <property name="styleSheet">
+        <string notr="true">background: #5f6368;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>-</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Operations</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="5" column="4">
+      <widget class="QPushButton" name="pushButton_5">
+       <property name="styleSheet">
+        <string notr="true">    background: #3c4043;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>5</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Values</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QPushButton" name="pushButton_tan">
+       <property name="styleSheet">
+        <string notr="true">background: #5f6368;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>tan</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Operations</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="QPushButton" name="pushButton_root">
+       <property name="styleSheet">
+        <string notr="true">background: #5f6368;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>√ </string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Operations</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QPushButton" name="pushButton_csc">
+       <property name="styleSheet">
+        <string notr="true">background: #5f6368;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>csc</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Operations</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QPushButton" name="pushButton_openbrace">
+       <property name="styleSheet">
+        <string notr="true">background: #5f6368;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>(</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Operations</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QRadioButton" name="radioButton_Rad">
+       <property name="styleSheet">
+        <string notr="true">background: #5f6368;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>Rad</string>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Operations</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QPushButton" name="pushButton_e">
+       <property name="styleSheet">
+        <string notr="true">background: #5f6368;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>e</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Operations</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="4" column="6">
+      <widget class="QPushButton" name="pushButton_div">
+       <property name="styleSheet">
+        <string notr="true">background: #5f6368;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>/</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Operations</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QPushButton" name="pushButton_sec">
+       <property name="styleSheet">
+        <string notr="true">background: #5f6368;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>sec</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Operations</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="5" column="6">
+      <widget class="QPushButton" name="pushButton_mult">
+       <property name="styleSheet">
+        <string notr="true">background: #5f6368;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>*</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Operations</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="1" column="5">
+      <widget class="QLabel" name="shower">
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">    background: #FFFFFF;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1" colspan="4">
+      <widget class="QLabel" name="history">
+       <property name="styleSheet">
+        <string notr="true">    background: #FFFFFF;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    box-sizing: border-box;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>621</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background #00000;</string>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="styleSheet">
+     <string notr="true">background #FFFFFF</string>
+    </property>
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <widget class="QMenu" name="menuoperating_mode_2">
+     <property name="title">
+      <string>operating mode</string>
+     </property>
+     <addaction name="actiondefault_calculator_2"/>
+     <addaction name="actionnumeral_system_2"/>
+    </widget>
+    <addaction name="menuoperating_mode_2"/>
+   </widget>
+   <addaction name="menuMenu"/>
+  </widget>
+  <action name="actiondefault_calculator">
+   <property name="text">
+    <string>default calculator</string>
+   </property>
+  </action>
+  <action name="actionnumeral_system">
+   <property name="text">
+    <string>numeral system</string>
+   </property>
+  </action>
+  <action name="actiondefault_calculator_2">
+   <property name="text">
+    <string>default calculator (current)</string>
+   </property>
+  </action>
+  <action name="actionnumeral_system_2">
+   <property name="text">
+    <string>numeral system</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="Operations"/>
+  <buttongroup name="Values"/>
+ </buttongroups>
+</ui>
